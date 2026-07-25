@@ -1,0 +1,140 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "MinhaClasseTryCatchFinally",
+            "request": "launch",
+            "mainClass": "MinhaClasseTryCatchFinally",
+            "projectName": "codExemplo_85f2e366"
+        },
+        {
+            "type": "java",
+            "name": "SobreMimTryCatch",
+            "request": "launch",
+            "mainClass": "SobreMimTryCatch",
+            "projectName": "codExemplo_85f2e366"
+        },
+        {
+            "type": "java",
+            "name": "ExemploDoWhileJoaozinho",
+            "request": "launch",
+            "mainClass": "ExemploDoWhileJoaozinho",
+            "projectName": "codExemplo_85f2e366"
+        },
+        {
+            "type": "java",
+            "name": "MinhaClasseDoWhile",
+            "request": "launch",
+            "mainClass": "MinhaClasseDoWhile",
+            "projectName": "codExemplo_85f2e366"
+        },
+        {
+            "type": "java",
+            "name": "ExemploWhileJoaozinho",
+            "request": "launch",
+            "mainClass": "ExemploWhileJoaozinho",
+            "projectName": "codExemplo_85f2e366"
+        },
+        {
+            "type": "java",
+            "name": "MyClass",
+            "request": "launch",
+            "mainClass": "MyClass",
+            "projectName": "codExemplo_85f2e366"
+        },
+        {
+            "type": "java",
+            "name": "ExemploForEach",
+            "request": "launch",
+            "mainClass": "ExemploForEach",
+            "projectName": "codExemplo_85f2e366"
+        },
+        {
+            "type": "java",
+            "name": "ResultadoEscolar",
+            "request": "launch",
+            "mainClass": "ResultadoEscolar",
+            "projectName": "codExemplo_85f2e366"
+        },
+        {
+            "type": "java",
+            "name": "SwitchMes",
+            "request": "launch",
+            "mainClass": "SwitchMes",
+            "projectName": "codExemplo_85f2e366"
+        },
+        {
+            "type": "java",
+            "name": "ResultadoEscolarCenario1",
+            "request": "launch",
+            "mainClass": "ResultadoEscolarCenario1",
+            "projectName": "codExemplo_85f2e366"
+        },
+        {
+            "type": "java",
+            "name": "ResultadoEscolarEncadeada",
+            "request": "launch",
+            "mainClass": "ResultadoEscolarEncadeada",
+            "projectName": "codExemplo_85f2e366"
+        },
+        {
+            "type": "java",
+            "name": "ExemploComparacaoStrings",
+            "request": "launch",
+            "mainClass": "ExemploComparacaoStrings",
+            "projectName": "codExemplo_85f2e366"
+        },
+        {
+            "type": "java",
+            "name": "StringComparisonExample",
+            "request": "launch",
+            "mainClass": "StringComparisonExample",
+            "projectName": "codExemplo_85f2e366"
+        },
+        {
+            "type": "java",
+            "name": "ResultadoEscolarCenario2",
+            "request": "launch",
+            "mainClass": "ResultadoEscolarCenario2",
+            "projectName": "codExemplo_85f2e366"
+        },
+        {
+            "type": "java",
+            "name": "CaixaEletronico",
+            "request": "launch",
+            "mainClass": "CaixaEletronico",
+            "projectName": "codExemplo_85f2e366"
+        },
+        {
+            "type": "java",
+            "name": "ExemploScanner",
+            "request": "launch",
+            "mainClass": "ExemploScanner",
+            "projectName": "codExemplo_85f2e366"
+        },
+        {
+            "type": "java",
+            "name": "StudentToString",
+            "request": "launch",
+            "mainClass": "StudentToString",
+            "projectName": "codExemplo_85f2e366"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Student",
+            "request": "launch",
+            "mainClass": "Student",
+            "projectName": "codExemplo_85f2e366"
+        }
+    ]
+}
