@@ -1,0 +1,93 @@
+Coleçao de Prompts para resumo:
+
+1. Fichamento analitico
+--------------------------
+"Aja como um relator acadêmico sênior. Baseando-se estritamente na fonte fornecida, elabore um fichamento analítico exaustivo do CAPÍTULO 2.
+O objetivo é que este texto contenha pelo menos 30% da quantidade de volume de paginas do original. 
+Siga rigorosamente esta estrutura para garantir a extensão:
+Exposição de Conceitos e Definições: Liste todos os termos técnicos e forneça a explicação completa dada pelo autor, incluindo o contexto de uso.
+Análise de Subtópicos: Para cada subtítulo dentro deste capítulo, crie uma seção de análise profunda e exaustiva (mínimo de 4 parágrafos por subtópico).
+Restrição: Não tente ser breve. Priorize a captura de detalhes, dados e a 'voz' do autor sobre a síntese."
+
+
+2. Resumo Exaustivo
+----------------------
+Aja como um redator acadêmico sênior. Vamos realizar uma RECONSTRUÇÃO TEXTUAL EXPANDIDA do CAPÍTULO X de forma sequencial e extremamente minuciosa. O objetivo é criar uma versão condensada de alta densidade, que mantenha exatamente o modelo, a ordem e o fluxo contínuo do texto original, priorizando uma leitura fluida e orgânica.
+
+Para garantir que nenhum detalhe, exemplo ou argumento seja perdido devido a limites de espaço, você deve processar o texto por partes.
+
+Nesta primeira resposta, foque ÚNICA E EXCLUSIVAMENTE na PRIMEIRA METADE do Capítulo acima (ou nas primeiras seções/páginas dele).
+
+Diretrizes Críticas:
+Progressão Linear Espelho: Siga a sequência exata do autor. Apresente os conceitos e termos técnicos no exato momento em que aparecem no texto, sem agrupá-los em glossários.
+Ultra-Detalhamento: Não sintetize. Desdobre todos os argumentos de suporte, as justificativas, as nuances teóricas e os exemplos práticos que o autor utiliza. O texto deve ser longo pela riqueza de dados extraídos da fonte.
+Travas de Segurança: É terminantemente proibido inventar teorias, deduzir ou extrapolar. A extensão deve vir apenas do conteúdo real presente no arquivo. Não use tópicos ou listas; escreva em prosa contínua e acadêmica, excelente para leitura.
+Formatação Markdown Acadêmica: Escreva em prosa contínua (sem tópicos ou bullets). Use a sintaxe Markdown para enriquecer a leitura: delimite os titulos do capitulo com titulos de nivel 1 (# Nome do titulo); as seçoes do autor com titulos de nivel 2 (## Nome do tópico); e as subseções utilizando títulos de nível 3 (### Nome do Subtópico); aplique itálico para termos conceituais e use blocos de citação para trechos ou expressões marcantes do autor.
+
+Por favor, apresente a reconstrução detalhada da PRIMEIRA PARTE do capítulo em questão. Pare assim que atingir o meio do capítulo ou o final da primeira grande discussão com a tag "[AGUARDANDO COMANDO PARA CONTINUAR]", e aguarde meu comando para continuar.
+
+Continuaçao:
+-------------
+Excelente. Mantenha exatamente o mesmo nível de ultra-detalhamento, o mesmo tom, a fidelidade absoluta à fonte e o estilo de prosa corrida em sintaxe Markdown. 
+Agora, continue a reconstrução a partir do ponto exato onde você parou, cobrindo a próxima parte do capítulo. Não pule nenhum detalhe ou exemplo secundário. Termine com a tag "[RESUMO CONCLUÍDO]" ao atingir o limite de espaço de resposta.
+
+
+
+Geral e ideias:
+-------------------
+
+– Prompt de Visão Geral Básico:
+
+"Forneça um resumo conciso de [Título do Livro] por [Autor]. Inclua os principais pontos da trama, personagens principais e temas centrais."
+
+"Resuma os capítulos [Capítulo X] a [Capítulo Y] de [Título do Livro], destacando os principais eventos e relacionamentos entre os personagens."
+
+"Qual é a ideia principal expressa neste livro?"
+
+2 – Prompt de Resumo Detalhado:
+
+"Crie um resumo detalhado de [Título do Livro], dividindo-o em seções: Introdução, Conteúdo Principal, Conclusão. Inclua citações importantes e analise o estilo de escrita do autor."
+
+"Resuma [Título do Livro] com foco em [Tema Específico, ex.: relacionamentos familiares, conflitos sociais, desenvolvimento de personagens]. Analise como o autor aborda esse tema."
+
+"Extraia os conceitos-chave apresentados em [Título do Livro] e explique-os de forma clara e compreensível para um público não especializado."
+
+3 – Prompt para Análise Crítica:
+
+"Que mensagem o autor quer transmitir neste livro? Qual é o ponto de vista dele ou dela?"
+
+"Avalie a eficácia da trama, dos personagens e do estilo de escrita na comunicação da mensagem do livro."
+
+"Compare e contraste os pontos de vista expressos neste livro com outras obras do mesmo autor ou sobre temas semelhantes."
+
+"Analise o impacto cultural e social deste livro quando foi publicado e sua relevância hoje."
+
+4 – Prompt para Propósitos Específicos:
+
+"Prepare um resumo de [Título do Livro] útil para estudo em grupo, incluindo perguntas para discussão e atividades práticas."
+
+"Escreva um resumo de [Título do Livro] na forma de uma resenha para um blog literário, destacando seus pontos fortes e fracos."
+
+"Crie um resumo de [Título do Livro] apropriado para estudantes do ensino médio, simplificando a linguagem e fornecendo exemplos claros."
+
+5 – Prompts Iterativos e de Refinamento:
+
+"Expanda o resumo da seção [Seção] de [Título do Livro], fornecendo mais detalhes sobre os eventos-chave."
+
+"Reformule o resumo de [Título do Livro] em um tom mais [ex.: formal, informal, conversacional]."
+
+"Identifique quaisquer inconsistências ou contradições no resumo fornecido e corrija-as."
+
+"Reduza o resumo de [Título do Livro] para [Número] palavras, retendo as informações essenciais." Dicas Adicionais para NotebookLM:
+
+Forneça Contexto: Quanto mais informações você fornecer ao NotebookLM sobre seu propósito e público para o resumo, melhores serão os resultados.
+
+Seja específico: Indique claramente quais aspectos do livro mais lhe interessam.
+
+Use linguagem clara e precisa: Evite ambiguidades e termos vagos.
+
+Experimente prompts diferentes: Não tenha medo de tentar diferentes formulações para obter o resultado desejado.
+
+Itere e refine: Use os resumos iniciais como base para pedir ao NotebookLM que elabore, reformule ou modifique o texto.
+
+Sempre verifique: Embora os resumos gerados pelo NotebookLM sejam geralmente precisos, é sempre uma boa ideia verificá-los em relação ao texto original. Espero que essas dicas ajudem você a aproveitar ao máximo o NotebookLM em seus estudos e pesquisas, Dino!

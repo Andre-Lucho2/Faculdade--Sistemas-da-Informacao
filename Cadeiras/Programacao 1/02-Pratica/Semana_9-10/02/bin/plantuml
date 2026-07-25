@@ -1,0 +1,67 @@
+```plantuml
+@startuml
+
+' ===== Classe base =====
+class Musica {
+  - nome : String
+  + Musica(nome : String)
+  + tocar() : void
+}
+
+' ===== Tipos de música =====
+class Classica {
+  - violino : Cordas
+  - viola : Cordas
+  - cello : Cordas
+  + tocar() : void
+}
+
+class Rock {
+  + tocar() : void
+}
+
+class Pop {
+  + tocar() : void
+}
+
+' ===== Instrumentos =====
+class Instrumento {
+  - nome : String
+  - marca : String
+  + tocar() : void
+  + afinar() : void
+}
+
+class Cordas {
+  - numeroDeCordas : int
+  - tipoDeCordas : String
+  + tocar() : void
+  + afinar() : void
+}
+
+class Violino
+class Viola
+class Violao
+class Cello
+
+' ===== Herança =====
+Musica <|-- Classica
+Musica <|-- Rock
+Musica <|-- Pop
+
+Instrumento <|-- Cordas
+
+Cordas <|-- Violino
+Cordas <|-- Viola
+Cordas <|-- Violao
+Cordas <|-- Cello
+
+' ===== Composição (banda dentro da música) =====
+Classica *-- Cordas : usa
+Rock *-- Cordas : usa
+Rock *-- Instrumento : usa
+Pop *-- Instrumento : usa
+
+@enduml
+```
+
