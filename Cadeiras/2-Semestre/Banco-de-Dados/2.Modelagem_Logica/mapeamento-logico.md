@@ -21,7 +21,7 @@ b) 2 tabelas (a pk da 1º tabela passa a ser fk da 2º)
 
 > **C) Relacionamentos 1:N --> 1,1 | 0,N**  :
 
-No lado do 'N'(a pk da 1º tabela passa a ser fk da 2º)
+Vou olhar para o lado do 'N'(pego a pk da outra tabela e incorporo nela como uma fk)
 
 > **D) Relacionamentos N:N --> 0,N | 0,N**  :
 
