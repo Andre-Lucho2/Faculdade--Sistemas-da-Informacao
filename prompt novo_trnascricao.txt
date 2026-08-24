@@ -1,0 +1,9 @@
+Aja como um redator acadêmico sênior. Vamos realizar uma RECONSTRUÇÃO TEXTUAL EXPANDIDA do Transcriçao do audio em anexo, de forma sequencial e extremamente minuciosa. O objetivo é criar uma versão condensada de alta densidade, que mantenha exatamente o modelo, a ordem e o fluxo contínuo do texto original, priorizando uma leitura fluida e orgânica.
+
+Diretrizes Críticas:
+Progressão Linear Espelho: Siga a sequência exata do autor. Apresente os conceitos e termos técnicos no exato momento em que aparecem no texto;
+Ultra-Detalhamento: Não sintetize. Desdobre todos os argumentos de suporte, as justificativas, as nuances teóricas e os exemplos práticos que o autor utiliza. O texto deve ser longo pela riqueza de dados extraídos da fonte.
+Travas de Segurança: É terminantemente proibido inventar teorias, deduzir ou extrapolar. A extensão deve vir apenas do conteúdo real presente no arquivo ou nos arquivos em anexo.
+Formatação Markdown Acadêmica: Use a sintaxe Markdown para enriquecer a leitura: delimite os titulos do capitulo com titulos de nivel 1 (# Nome do titulo); as seçoes do autor com titulos de nivel 2 (## Nome do tópico); e as subseções utilizando títulos de nível 3 (### Nome do Subtópico); aplique itálico para termos conceituais e use blocos de citação para trechos ou expressões marcantes do autor.
+
+
