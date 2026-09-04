@@ -3,7 +3,7 @@
 Uma tabela está na 1FN quando ela garantir que cada tabela tenha:  
 - **A)** 1 **chave primária única**;  
 - **B)** Os valores em cada coluna devem ser **atômicos** -->   
-    - b.1) Não possuam **atributos múltivalorados agrupados** do **mesmo domínio**(o dado se relaciona a mesma informação)  
+    - b.1) Não possuam **atributos múltivalorados agrupados** do **mesmo domínio**(o dado que se relaciona a mesma informação)  
     - b.2) Quando tiver um mesmo domínio, **evitar de mantê-lo** em **atributos diferentes** (atributos multivalorados disfarçados de colunas)   
     *ver desvantagem abaixo*  
     - b.3) A informação **não seja composta**.
@@ -51,13 +51,28 @@ Desmembrar a "2º tabela" e manter apenas 1 com pk composto (pk tabela 1 + pk "2
 
 <br>
 
+---
+
+### OBS.:
+
+Dependência Funcional transitiva - como resolver?
+---
+Temos uma DF-Transitiva quando um valor de uma coluna depende de outra coluna que não a chave-primária(pk)
+
+Construir uma outra tabela com os elementos inter-dependentes
+
 <br>
+
+<br>
+
+---
 
 # Segunda Forma Normal (2FN):
 
 Uma tabela está na 2FN se e somente se:   
 **a)** estiver na 1FN;  
 **b)** quando todo atributo (não pk) tem uma DF Total com a sua pk (e não com apenas parte dela).
+> #### Obs.: o atributo pk deve ser composto para se aplicar a 2FN
 
 ![](./imgs/2fn.png)
 
@@ -75,7 +90,7 @@ Uma tabela está na 2FN se e somente se:
 <br>
 
 - **"nota"**:  
-Degue a 2FN também;  
+Segue a 2FN também;  
 **Está na 2FN**
 
 <br>
@@ -109,3 +124,12 @@ Normalização para a 3FN:
 ---
 
 ![](./imgs/3nf-1.png)
+
+<br>
+
+---
+
+### OBS.:
+
+Ver que a dependencia funcional entre id_vendedor e nome_vendedor se repentem em conjunto pelo menos 1x nas colunas --> repetição de informação --> para melhor desempenho do BD aplicar a 3FN
+
