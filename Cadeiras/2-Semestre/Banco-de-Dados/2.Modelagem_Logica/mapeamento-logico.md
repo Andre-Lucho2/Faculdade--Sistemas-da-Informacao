@@ -24,8 +24,8 @@ b) Mantêm as 2 tabelas --> a pk da 1º tabela é incorporada como fk da 2º
 ### **C) Relacionamentos 1:N --> 1,1 | 0,N**:
 ---
 
-Vou olhar para o lado do 'N'(1) (pego a pk da tabela com cardinalidade '1'(2) e incorporo um novo atributo nela(1) como uma fk da tabela(2)
-Mesmo b) de (B) acima
+Vou olhar para o lado do '1' (pego a pk da tabela com cardinalidade '1' e incorporo o seu atributo como um novo atributo estrangeiro(fk) na outra tabela.
+- Mesmo b) de (B) acima
 
 ### **D) Relacionamentos N:N --> 0,N | 0,N**:
 ---
