@@ -1,5 +1,9 @@
 --SQLite == Mesmo Comando
 
+----------------------------------------------------------
+-- CRIAÇÃO TABELAS
+----------------------------------------------------------
+
 CREATE TABLE "Modelo" (
     "id_modelo" NUMBER,
     "nome" VARCHAR2(50) NOT NULL, -- max de 50 caracteres - dinâmico = grava no banco o que passar
@@ -23,11 +27,12 @@ CREATE TABLE Modelo (
 -- ou
 
 CREATE TABLE "Modelo" (
-    "id_modelo" NUMBER PRIMARY KEY,
+    "id_modelo" NUMBER,
     "nome" VARCHAR2(50) NOT NULL,
     "cor" CHAR(10),
     "num_lugares" NUMBER,
-    "autonomia" NUMBER(6, 2)
+    "autonomia" NUMBER(6, 2),
+    "CONSTRAINT" pk_modelo PRIMARY KEY("id_modelo")
 );
 
 CREATE TABLE Aviao (
@@ -38,14 +43,135 @@ CREATE TABLE Aviao (
 );
 
 ----------------------------------------------------------
+-- ALTERAÇÕES
+----------------------------------------------------------
 -- UPDATE SQLite
--- Inclusões
+
+
+-- Adicionar campo
+-------------------------------------
 ALTER TABLE Aviao
 ADD data_fabricacao DATE;
 
-----------------------------------------------------------
 
+-- Remover uma coluna
+-------------------------------------
+ALTER TABLE Cliente 
+DROP COLUMN telefone_2;
+
+
+-- Alterar tipo ou tamanho de um campo
+-------------------------------------
+
+--MySQL
+ALTER TABLE nome_tabela 
+MODIFY COLUMN nome VARCHAR(100);
+
+--PostgreSQL / SQL Server:
+ALTER TABLE Modelo 
+ALTER COLUMN nome TYPE VARCHAR(100);
+
+
+-- Renomear uma coluna
+-------------------------------------
+ALTER TABLE Piloto 
+RENAME COLUMN num_licen TO licenca_id;
+
+
+--Renomear a tabela inteira
+-------------------------------------
+ALTER TABLE Aviao 
+RENAME TO Aeronave;
+
+
+-- Alterações em dados já alocados
+-------------------------------------
+UPDATE Modelo
+SET cor = 'Black'
+WHERE id_modelo = 1;
+
+UPDATE Modelo
+SET cor = 'Black'
+WHERE id_modelo = 2;
+
+
+UPDATE Aviao
+SET matricula = 'KJW123'
+WHERE matricula = 'KKK222';
+
+-- Deleção
+----------------
+DELETE FROM Modelo
+WHERE id_modelo = 1;
+
+
+
+-- Adicionar restrições (Chaves e Validações)
+--------------------------------------------------
+
+--Chave Primária (pk)
+---------------------------
+ALTER TABLE Piloto 
+ADD CONSTRAINT pk_piloto PRIMARY KEY (num_licen);
+
+
+--Chave Estrangeira (fk)
+-----------------------------
+ALTER TABLE Aviao 
+ADD CONSTRAINT fk_aviao_modelo 
+FOREIGN KEY (id_modelo) REFERENCES Modelo (id_modelo);
+
+
+--Validação de valores
+------------------------------
+ALTER TABLE Modelo 
+ADD CONSTRAINT chk_lugares CHECK (num_lugares > 0);
+
+
+-- Unicidade
+------------------------------
+ALTER TABLE Cliente 
+ADD CONSTRAINT uq_cpf UNIQUE (cpf);
+
+
+-- Remover uma restrição
+------------------------------
+
+--PostgreSQL / Oracle / SQL Server:
+ALTER TABLE Aviao 
+DROP CONSTRAINT fk_aviao_modelo;
+
+--No MySQL (específico por tipo):
+ALTER TABLE Aviao DROP FOREIGN KEY fk_aviao_modelo;
+ALTER TABLE Piloto DROP PRIMARY KEY;
+
+
+--Definir ou Remover Valores Padrão
+------------------------------------
+ALTER TABLE Modelo 
+ALTER COLUMN cor SET DEFAULT 'Branco';
+
+
+--Remover valor padrão
+------------------------------
+ALTER TABLE Modelo 
+ALTER COLUMN cor DROP DEFAULT;
+
+
+--SET NOT NULL / DROP NOT NULL — Controlar Nulabilidade
+-----------------------------------------------------------
+ALTER TABLE Piloto 
+ALTER COLUMN nome SET NOT NULL;
+
+ALTER TABLE Piloto 
+ALTER COLUMN nome DROP NOT NULL;
+
+
+----------------------------------------------------------
+-- INCLUSÕES
+----------------------------------------------------------
 --SQLite == Mesmo Comando
+
 INSERT INTO Modelo 
 VALUES (1,'Boeing 1000', 'Preto', 400, 8000);
 INSERT INTO Modelo 
@@ -82,27 +208,6 @@ VALUES ('KKK222', 5, TO_DATE('2022-03-20', 'yyyy-MM-DD'));
 
 ----------------------------------------------------------
 
-UPDATE Modelo
-SET cor = 'Black'
-WHERE id_modelo = 1;
-
-UPDATE Modelo
-SET cor = 'Black'
-WHERE id_modelo = 2;
-
-
-UPDATE Aviao
-SET matricula = 'KJW123'
-WHERE matricula = 'KKK222';
-
-----------------------------------------------------------
-
--- Alterar a estrutura (tipo de dado ou nome) da coluna - PostgreSQL
-ALTER TABLE nome_tabela MODIFY COLUMN nome_coluna NOVO_TIPO;
-
-
-
-----------------------------------------------------------
 -- Para fazer um DELETE do (Aviao id_modelo = 1) temos que desvincular a informação dele da Table Modelo onde ele herda o id_modelo
 UPDATE Aviao
 SET id_modelo = 2
